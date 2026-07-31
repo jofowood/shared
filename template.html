@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===================================================================
+     STARTER TEMPLATE -- jofowood GitHub Pages projects
+     Repo: shared  →  https://jofowood.github.io/shared/template.html
+
+     Structure mirrors jofowo.com: persistent logo+nav header, a narrow
+     text column for prose with full-bleed images, and a footer with
+     back-to-top + copyright + mailing list -- identical on every page.
+
+     HOW TO USE THIS FILE FOR A NEW PROJECT:
+     1. Copy this file into the new project's repo and rename it (e.g.
+        index.html).
+     2. Update <title> below.
+     3. The nav is just one link back to jofowo.com -- update the href if
+        this project should point somewhere else instead.
+     4. Replace the PAGE CONTENT comment with the actual page -- including
+        that page's own title (h1, or an image, your call).
+     5. If the page needs its own layout/behavior beyond the shared house
+        style, add a page-specific <style> block AFTER the shared
+        stylesheet link (so it can override shared rules when it needs
+        to) and a <script> block near the end, same pattern as the Tiny
+        Bone Set builder.
+     =================================================================== -->
+
+<title>PAGE TITLE HERE</title>
+
+<!-- Required in this exact order: Adobe Fonts embed, then the shared
+     house stylesheet. See jofowo-github.css's own header comment for why
+     these can't be combined into one file. -->
+<link rel="stylesheet" href="https://use.typekit.net/fpc1twk.css">
+<link rel="stylesheet" href="https://jofowood.github.io/shared/jofowo-github.css">
+
+<!-- Page-specific CSS goes here, AFTER the shared stylesheet, only if
+     this page needs layout beyond what jofowo-github.css provides:
+<style>
+</style>
+-->
+
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- Shared site header -- logo + nav only, identical across every page.
+       No page title here; that lives in the content area below, same as
+       jofowo.com keeps "About"/"Series"/etc. out of the persistent header. -->
+  <header class="site-header">
+    <a class="site-logo-link" href="https://jofowood.github.io/">John Woodruff</a>
+    <nav class="site-nav">
+      <a href="https://jofowo.com">Back to Main Site</a>
+    </nav>
+  </header>
+
+  <!-- ===============================================================
+       PAGE CONTENT GOES HERE. This is where the page's own title lives
+       -- an <h1>, or an image like title.png if this project has one.
+       Wrap body text in <div class="content"> to keep it at a narrow,
+       readable width; use class="full-bleed" on images that should run
+       edge-to-edge regardless of that width.
+       =============================================================== -->
+
+  <!-- Shared site footer -- identical across every page. -->
+  <footer class="site-footer">
+    <a class="back-to-top" href="#top">↑ Back to Top</a>
+    <p class="copyright-line">
+      Copyright © 2020–<span id="copyright-year"></span> John Woodruff
+      | <a href="http://eepurl.com/i9nouY">Mailing List</a>
+    </p>
+  </footer>
+
+</div>
+
+<script>
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+/* Page-specific JS goes here, if this page needs any. */
+</script>
+</body>
+</html>

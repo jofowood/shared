@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jofowo-github.css — Style Guide</title>
+
+<link rel="stylesheet" href="https://use.typekit.net/fpc1twk.css">
+<link rel="stylesheet" href="https://jofowood.github.io/shared/jofowo-github.css">
+
+<style>
+  /* Style-guide-only CSS -- none of this is part of the shared system.
+     It exists purely to label and frame the examples below. */
+  .sg-section{ margin-bottom:56px; }
+  .sg-label{
+    font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--accent); border-bottom:1px solid var(--border);
+    padding-bottom:8px; margin-bottom:20px;
+  }
+  .sg-row{ display:flex; flex-wrap:wrap; gap:14px; align-items:center; margin-bottom:12px; }
+  .sg-caption{
+    font-size:11px; color:var(--ink-soft); margin:6px 0 0; font-family:monospace;
+  }
+  .sg-swatches{ display:flex; flex-wrap:wrap; gap:16px; }
+  .sg-swatch{ width:120px; }
+  .sg-swatch .chip{
+    height:60px; border:1px solid var(--border); border-radius:2px; margin-bottom:6px;
+  }
+  .sg-swatch .name{ font-size:12px; font-weight:600; }
+  .sg-swatch .hex{ font-size:11px; color:var(--ink-soft); font-family:monospace; }
+  .sg-panel-demo{ max-width:340px; }
+  .sg-form-demo{ max-width:340px; }
+  .sg-form-demo .field{ margin-bottom:12px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="site-header">
+    <a class="site-logo-link" href="https://jofowood.github.io/">John Woodruff</a>
+    <nav class="site-nav">
+      <a href="https://jofowo.com">Back to Main Site</a>
+    </nav>
+  </header>
+
+  <div class="content" style="margin-bottom:50px;">
+    <p class="eyebrow">Internal Reference</p>
+    <h1>jofowo-<em>github</em>.css</h1>
+    <p class="note">Every element this stylesheet styles, in one place, so a change here can be checked at a glance instead of by opening five different project pages. Not a real project -- just the reference.</p>
+  </div>
+
+  <!-- COLORS -->
+  <div class="sg-section">
+    <p class="sg-label">Colors</p>
+    <div class="sg-swatches">
+      <div class="sg-swatch"><div class="chip" style="background:var(--parchment);"></div><div class="name">parchment</div><div class="hex">#FFFFFF</div></div>
+      <div class="sg-swatch"><div class="chip" style="background:var(--ink);"></div><div class="name">ink</div><div class="hex">#111111</div></div>
+      <div class="sg-swatch"><div class="chip" style="background:var(--ink-soft);"></div><div class="name">ink-soft</div><div class="hex">#666666</div></div>
+      <div class="sg-swatch"><div class="chip" style="background:var(--accent);"></div><div class="name">accent</div><div class="hex">#111111</div></div>
+      <div class="sg-swatch"><div class="chip" style="background:var(--border);"></div><div class="name">border</div><div class="hex">#DDDDDD</div></div>
+    </div>
+  </div>
+
+  <!-- TYPOGRAPHY -->
+  <div class="sg-section">
+    <p class="sg-label">Typography — font-family: var(--font) (Orator via Adobe Fonts)</p>
+    <p class="eyebrow">Eyebrow label</p>
+    <p class="sg-caption">.eyebrow</p>
+
+    <h1 style="margin-top:16px;">Heading One <em>with accent</em></h1>
+    <p class="sg-caption">h1 / h1 em</p>
+
+    <h2 style="margin-top:16px;">Heading Two</h2>
+    <p class="sg-caption">h2</p>
+
+    <p style="margin-top:16px;">This is a plain paragraph, the default body text weight and line-height for any prose on the page.</p>
+    <p class="sg-caption">p</p>
+
+    <p class="note">This is a .note -- smaller, muted, used for explainer/instructional text underneath a heading.</p>
+    <p class="sg-caption">.note</p>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="sg-section">
+    <p class="sg-label">Buttons &amp; button-styled links</p>
+    <div class="sg-row">
+      <button>Default button</button>
+      <button class="primary">Primary</button>
+      <button class="ghost">Ghost</button>
+      <button class="primary" disabled>Primary (disabled)</button>
+    </div>
+    <div class="sg-row">
+      <button class="small">Small</button>
+      <button class="small" disabled>Small (disabled)</button>
+      <a class="btn primary" href="#">Link styled as button</a>
+      <a class="btn primary disabled" href="#">Link (disabled)</a>
+    </div>
+    <p class="sg-caption">button / button.primary / button.ghost / button.small / a.btn.primary / :disabled &amp; .disabled states</p>
+  </div>
+
+  <!-- LINKS -->
+  <div class="sg-section">
+    <p class="sg-label">Links</p>
+    <p><a href="#">A plain inline text link</a> sits right in a paragraph like this.</p>
+    <p class="sg-caption">a</p>
+  </div>
+
+  <!-- PANEL -->
+  <div class="sg-section">
+    <p class="sg-label">Panel / card</p>
+    <div class="panel sg-panel-demo">
+      <h2>Panel Heading</h2>
+      <div style="padding:16px;">
+        <p style="margin:0;">Panel body content goes here -- this is just a plain div, the panel itself only styles the border/background/heading.</p>
+      </div>
+      <p class="footnote">A .footnote sits at the bottom of a panel, like this.</p>
+    </div>
+    <p class="sg-caption">.panel / .panel h2 / .footnote</p>
+  </div>
+
+  <!-- FORMS -->
+  <div class="sg-section">
+    <p class="sg-label">Form fields</p>
+    <div class="sg-form-demo">
+      <div class="field">
+        <label for="sg-name">Label text</label>
+        <input id="sg-name" type="text" placeholder="Placeholder text">
+      </div>
+      <div class="field">
+        <label for="sg-notes">Textarea label</label>
+        <textarea id="sg-notes" rows="3" placeholder="Placeholder text"></textarea>
+      </div>
+    </div>
+    <p class="sg-caption">label / input / textarea</p>
+  </div>
+
+  <!-- FULL-BLEED IMAGE -->
+  <div class="sg-section">
+    <p class="sg-label">Content column vs. full-bleed image</p>
+    <div class="content">
+      <p style="margin-top:0;">This paragraph sits inside <code>.content</code> -- a constrained, readable width. The image below it is inside <code>.full-bleed</code>, so it breaks back out to the full page width regardless of how narrow this text column is. That's the "narrow text, wide imagery" pattern from jofowo.com.</p>
+    </div>
+    <div class="full-bleed">
+      <div style="background:var(--border-dim); height:220px; display:flex; align-items:center; justify-content:center; color:var(--ink-soft); font-size:12px;">
+        [ full-bleed image placeholder -- swap in a real photo ]
+      </div>
+    </div>
+    <p class="sg-caption">.content / .full-bleed</p>
+  </div>
+
+  <footer class="site-footer">
+    <a class="back-to-top" href="#top">↑ Back to Top</a>
+    <p class="copyright-line">
+      Copyright © 2020–<span id="copyright-year"></span> John Woodruff
+      | <a href="http://eepurl.com/i9nouY">Mailing List</a>
+    </p>
+  </footer>
+
+</div>
+
+<script>
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
