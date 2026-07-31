@@ -54,7 +54,7 @@ body{
    a narrow reading column with imagery breaking out to full width around
    it. Use for paragraphs/prose; NOT for the wrap itself (which stays wide
    so full-bleed images have somewhere to break out into). */
-.content{ max-width: 800px; maergin-left: auto; margin-right:auto; width: 100%;}
+.content{ max-width: 800px; margin-left: auto; margin-right:auto; width: 100%;}
 
 /* Lets an element inside .wrap escape back out to the full viewport width
    -- for photos/hero images, the way jofowo.com's image blocks run edge to
@@ -149,7 +149,7 @@ h2{ font-weight:600; font-size:26px; line-height:1.15; margin:0; }
 p{ font-size:20px; line-height:28px; }
 .note{ font-size:14.5px; color:var(--ink-soft); line-height:1.55; margin:14px 0 0; }
 
-a{ color:var(--ink); }
+a{ color:var(--ink-soft); }
 a:hover{ opacity:0.75; }
 
 /* ---------- Buttons & button-styled links ---------- */
@@ -183,16 +183,16 @@ button.small:disabled{ opacity:0.4; }
 }
 .footnote{
   font-size:14.5px; color:var(--ink-soft); line-height:1.5;
-  border-top:1px solid var(--border); padding:12px 16px 16px;
+  border-top:1px solid var(--border); border-radius:5px; padding:12px 16px 16px;
 }
 
 /* ---------- Forms ---------- */
 input, textarea, select{
   width:100%; padding:9px 10px; border:1px solid var(--border);
-  background:#FFFFFF; font-family: var(--font); font-size:14px; color:var(--ink);
+  background:#FFFFFF; font-family: var(--font); font-size:18px; color:var(--ink);
 }
 label{
-  display:block; font-size:10.5px; text-transform:uppercase;
+  display:block; font-size:14.5px; text-transform:uppercase; font-style: italics;
   letter-spacing:.08em; color:var(--ink-soft); margin-bottom:5px;
 }
 
