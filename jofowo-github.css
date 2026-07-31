@@ -54,7 +54,7 @@ body{
    a narrow reading column with imagery breaking out to full width around
    it. Use for paragraphs/prose; NOT for the wrap itself (which stays wide
    so full-bleed images have somewhere to break out into). */
-.content{ max-width: 640px; }
+.content{ max-width: 800px; maergin-left: auto; margin-right:auto; width: 100%;}
 
 /* Lets an element inside .wrap escape back out to the full viewport width
    -- for photos/hero images, the way jofowo.com's image blocks run edge to
