@@ -92,7 +92,7 @@ header.site-header{
   margin-bottom: 30px;
 }
 .site-logo-link{ display:inline-block; line-height:0; }
-.site-logo{ display:block; height:40px; width:auto; }
+.site-logo{ display:block; height:30px; width:auto; }
 .site-nav{ display:flex; gap:20px; align-items:center; }
 .site-nav a{
   font-size:14px; letter-spacing:0.1em; text-transform:uppercase;
