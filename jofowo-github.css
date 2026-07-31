@@ -179,7 +179,7 @@ button.small:disabled{ opacity:0.4; }
 .panel h2{
   font-size:26px; letter-spacing:0.12em; text-transform:uppercase;
   color:var(--ink-soft); margin:0; padding:14px 16px 12px;
-  border-bottom:1px solid var(--border);
+  border-bottom:1px solid var(--border); background-color: var(--border);
 }
 .footnote{
   font-size:14.5px; color:var(--ink-soft); line-height:1.5;
