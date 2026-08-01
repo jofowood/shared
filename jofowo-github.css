@@ -152,6 +152,8 @@ p{ font-size:20px; line-height:28px; }
 a{ color:var(--ink-soft); }
 a:hover{ opacity:0.75; }
 
+.text-align-center {text-align:center;}
+
 /* ---------- Buttons & button-styled links ---------- */
 button, a.btn{
   font-family: var(--font);
